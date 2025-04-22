@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",         // ou "node16"
+    "moduleResolution": "node",
+    "types": ["vitest/globals"]
+  },
+  "include": ["."],
+  "exclude": ["node_modules"]
+}

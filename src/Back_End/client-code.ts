@@ -1,0 +1,14 @@
+import {ServerProtocol} from './interfaces/Adapter-Server-Protocol'
+import {AdapterServer} from './server/Adapter-Server'
+
+export function RunServer(server: ServerProtocol){
+    if(server){
+        
+        server.isRunning()
+        console.log('Server is running');
+    }else{
+        console.log('Server is Falled');
+    }
+}
+
+RunServer(new AdapterServer())
